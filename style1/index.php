@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bb5aae4646.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/reset.css"> 
-    <link rel="stylesheet" href="./css/index.css"> 
+    <link rel="stylesheet" href="../reset.css"> 
+    <link rel="stylesheet" href="index.css"> 
     <title>HangMan</title>
 </head>
 <body>

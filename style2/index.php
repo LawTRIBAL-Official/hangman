@@ -69,8 +69,12 @@
                         <button class="y btn">Y</button>
                         <button class="z btn">Z</button>
                     </div>
+                    <div class="letter-word">
+                        <!-- JS script inserts spans with letters -->
+                    </div>
                     <div class="man-box">
                         <div class="man">
+                            <!--Figure out a way to draw with JS-->
                             <p>MAN</p>
                         </div>
                     </div>

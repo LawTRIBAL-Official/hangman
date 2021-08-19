@@ -21,6 +21,8 @@ body {
     margin: 0 auto;
     text-align: center;
     color: var(--text);
+    max-height: 1080px;
+    height: 100%;
 }
 
 p {
@@ -51,12 +53,14 @@ span {
     width: 100%;
     margin: 0 auto;
     display: block;
+    max-height: inherit;
+    height: 100%;
 }
 
 .parent {
     position: relative;
     display: flex;
-    max-height: 480px;
+    max-height: 1080px;
     height: 100%;
 }
 

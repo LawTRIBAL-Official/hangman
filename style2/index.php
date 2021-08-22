@@ -24,57 +24,32 @@
                 <div class="left-div side">
                     <div class="info">
                         <div class="circle">
-                            <h1 class="lifes">10</h1>
+                            <h1 class="lifes" id="mylives">10</h1>
                         </div>
                         <div class="info-extra">
                         <div class="cate">
-                            <p>Chosen Category <span id="category">Europe history</span></p>
+                            <p>Chosen Category <span id="catagoryName">Europe history</span></p>
                         </div>
                         <div class="hint">
                             <p>Clue <span id="clue">Denmark</span></p>
                         </div>
                         <div class="buttons">
-                            <button class="hint btn2">HINT</button>
-                            <button class="reset btn2">RESET</button>
+                            <button class="hint btn2" id="hint">HINT</button>
+                            <button class="reset btn2" id="reset">RESET</button>
                         </div>
                     </div>
                     </div>
                 </div>
                 <div class="right-div side">
-                    <div class="letters">
-                        <button class="a btn">A</button>
-                        <button class="b btn">B</button>
-                        <button class="c btn">C</button>
-                        <button class="d btn">D</button>
-                        <button class="e btn">E</button>
-                        <button class="f btn">F</button>
-                        <button class="g btn">G</button>
-                        <button class="h btn">H</button>
-                        <button class="i btn">I</button>
-                        <button class="j btn">J</button>
-                        <button class="k btn">K</button>
-                        <button class="l btn">L</button>
-                        <button class="m btn">M</button>
-                        <button class="n btn">N</button>
-                        <button class="o btn">O</button>
-                        <button class="p btn">P</button>
-                        <button class="q btn">Q</button>
-                        <button class="r btn">R</button>
-                        <button class="s btn">S</button>
-                        <button class="t btn">T</button>
-                        <button class="u btn">U</button>
-                        <button class="v btn">V</button>
-                        <button class="w btn">W</button>
-                        <button class="x btn">X</button>
-                        <button class="y btn">Y</button>
-                        <button class="z btn">Z</button>
+                    <div class="letters" id="buttons">
+                        
                     </div>
                     <div class="letter-word">
                         <!-- JS script inserts spans with letters -->
                     </div>
                     <div class="man-box">
                         <div class="man">
-                            <!--Figure out a way to draw with JS-->
+                            <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas 
                             <p>MAN</p>
                         </div>
                     </div>

@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/bb5aae4646.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../reset.css"> 
     <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="style2.css">
     <title>HangMan</title>
 </head>
 <body>
@@ -28,14 +29,14 @@
                         </div>
                         <div class="info-extra">
                         <div class="cate">
-                            <p>Chosen Category <span id="catagoryName">Europe history</span></p>
+                            <p id="catagoryName"></p>
                         </div>
                         <div class="hint">
-                            <p>Clue <span id="clue">Denmark</span></p>
+                            <p id="clue">Clue - </p>
                         </div>
                         <div class="buttons">
-                            <button class="hint btn2" id="hint">HINT</button>
-                            <button class="reset btn2" id="reset">RESET</button>
+                            <button onClick="play()" class="hint btn2" id="hint">HINT</button>
+                            <button onClick="reset()" class="reset btn2" id="reset">RESET</button>
                         </div>
                     </div>
                     </div>
@@ -50,7 +51,6 @@
                     <div class="man-box">
                         <div class="man">
                             <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas 
-                            <p>MAN</p>
                         </div>
                     </div>
                 </div>
@@ -62,5 +62,6 @@
             </p>
         </div>
     </div>
+    <script src="./js/app.js"></script> 
 </body>
 </html>

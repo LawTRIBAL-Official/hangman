@@ -3,14 +3,6 @@
     Light red: #F05454; 
     Div color: #1f1f20;
 */
-
-:root {
-    --background: #252627;
-    --div:  #1f1f20;
-    --span: #F05454;
-    --lifes:#54f076;;
-    --text: #DDDDDD;
-}
 body {
     background-color: var(--background);
     overflow-y: hidden;
@@ -95,6 +87,9 @@ span {
 
 .letters {
     padding-top: 4vh;
+    max-width: 310px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .man p {

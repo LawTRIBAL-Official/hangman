@@ -10,7 +10,6 @@
     <title>HangMan</title>
 </head>
 <body>
-    <script src="./js/app.js"></script> 
     <div class="container">
         <div class="header">
             <h1>Hangman</h1>
@@ -18,22 +17,17 @@
         </div>
     </div>
     <div class="wrapper">
-        <div class="flex-parent">
-            <div class="col1">
-            <p id="catagoryName"></p>
-            <div id="hold"></div>
-            <p id="mylives"></p>
-            <p id="clue">Clue: </p>
-            </div>  
-            <div class=col2>
-                <div id="buttons"></div>
-                <canvas id="stickman"></canvas>
-            </div>
-        </div>
+        <div id="buttons"></div>  
+        <p id="catagoryName"></p>
+        <div id="hold"></div>
+        <p id="mylives"></p>
+        <p id="clue">Clue -</p>  
+        <canvas id="stickman"></canvas>
         <div class="container">
             <button id="hint">Hint</button>
-            <button id="reset">Retry</button>
+            <button id="reset">Play again</button>
         </div>
     </div>
+    <script src="./js/app.js"></script> 
 </body>
 </html>

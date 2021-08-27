@@ -1,25 +1,26 @@
 window.onload = function () {
 
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-      'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-      't', 'u', 'v', 'w', 'x', 'y', 'z'];
+                'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
+                'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
+                'y', 'z'
+              ];
 
-var categories;         // Array of topics
-var chosenCategory;     // Selected catagory
-var getHint ;          // Word getHint
-var word ;              // Selected word
-var guess ;             // Geuss
-var geusses = [ ];      // Stored geusses
-var lives ;             // Lives
-var counter ;           // Count correct geusses
-var space;              // Number of spaces in word '-'
+var categories;         
+var chosenCategory;    
+var getHint ;           
+var word ;              
+var guess ;             
+var geusses = [ ];      
+var lives ;             
+var counter ;           
+var space;              
 
-// Get elements
 var showLives = document.getElementById("mylives");
 var showCatagory = document.getElementById("scatagory");
 var getHint = document.getElementById("hint");
 var showClue = document.getElementById("clue");
-
+w
 
 
 // create alphabet ul
@@ -39,7 +40,6 @@ var buttons = function () {
 }
   
 
-// Select Catagory
 var selectCat = function () {
   if (chosenCategory === categories[0]) {
     catagoryName.innerHTML = "Catgory: Games";
@@ -49,8 +49,6 @@ var selectCat = function () {
     catagoryName.innerHTML = "Category: Virtual Pandemics";
   }
 }
-
-// Create geusses ul
   result = function () {
   wordHolder = document.getElementById('hold');
   correct = document.createElement('ul');
@@ -72,7 +70,6 @@ var selectCat = function () {
   }
 }
 
-// Show lives
   comments = function () {
   showLives.innerHTML = "You have " + lives + " lives";
   if (lives < 1) {
@@ -85,14 +82,12 @@ var selectCat = function () {
   }
 }
 
-    // Animate man
 var animate = function () {
   var drawMe = lives ;
   drawArray[drawMe]();
 }
 
 
-  // Hangman
 canvas =  function(){
 
   myStickman = document.getElementById("stickman");
@@ -118,55 +113,35 @@ draw = function($pathFromx, $pathFromy, $pathTox, $pathToy) {
 
 
 // annoying drawing method.... (Don't use canvas again Alex)
-  frame1 = function() {
-    draw (0, 150, 150, 150);
-  };
+  frame1 = function() { draw (0, 150, 150, 150);  };
   
-  frame2 = function() {
-    draw (10, 0, 10, 600);
-  };
+  frame2 = function() { draw (10, 0, 10, 600);  };
 
-  frame3 = function() {
-    draw (0, 5, 70, 5);
-  };
+  frame3 = function() { draw (0, 5, 70, 5); };
 
-  frame4 = function() {
-    draw (60, 5, 60, 15);
-  };
+  frame4 = function() { draw (60, 5, 60, 15); };
 
-  torso = function() {
-    draw (60, 36, 60, 70);
-  };
+  torso = function() {  draw (60, 36, 60, 70);  };
 
-  rightArm = function() {
-    draw (60, 46, 100, 50);
-  };
+  rightArm = function() { draw (60, 46, 100, 50); };
 
-  leftArm = function() {
-    draw (60, 46, 20, 50);
-  };
+  leftArm = function() {  draw (60, 46, 20, 50);  };
 
-  rightLeg = function() {
-    draw (60, 70, 100, 100);
-  };
+  rightLeg = function() { draw (60, 70, 100, 100); };
 
-  leftLeg = function() {
-    draw (60, 70, 20, 100);
-  };
+  leftLeg = function() {  draw (60, 70, 20, 100)  };
 
 drawArray = [
-  rightLeg, 
-  leftLeg, rightArm,
-  leftArm,
-  torso,  head,
-  frame4,
-  frame3,
+  frame1,
   frame2,
-  frame1
+  frame3,
+  frame4,
+  torso,  head,
+  leftArm,
+  leftLeg, rightArm,
+  rightLeg
 ]; 
 
-
-// OnClick Function
   check = function () {
   list.onclick = function () {
     var geuss = (this.innerHTML);
@@ -190,7 +165,6 @@ drawArray = [
 }
 
   
-// Play
 play = function () {
   categories = [
       [
@@ -236,8 +210,6 @@ play = function () {
 
 play();
 
-// Hint
-
   hint.onclick = function() {
 
     hints = [
@@ -245,17 +217,17 @@ play();
         "1.2",
         "method",
         "ghost",
-        "street fight 7",
+        "street fight",
         "smol humans, cat people",
-        "new zombie 2021",
+        "new zombie",
         "og fps zombie"
       ],
       [
-        "wizards big creatures in cities big luggage",
+        "big luagge",
         "noise means death",
-        "can't see anything outside from the store",
-        "the flame likes bacon and egg shells",
-        "demons in bottle by Spanish people"
+        "close sight",
+        "eating egg shells",
+        "demon bottle spanish"
       ],
       [
         "world of warcraft pandemic",
@@ -270,8 +242,6 @@ play();
   var hintIndex = chosenCategory.indexOf(word);
   showClue.innerHTML = "Clue: - " +  hints [catagoryIndex][hintIndex];
 };
-
-  // Reset
 
 document.getElementById('reset').onclick = function() {
   correct.parentNode.removeChild(correct);

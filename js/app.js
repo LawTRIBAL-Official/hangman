@@ -20,7 +20,6 @@ var showLives = document.getElementById("mylives");
 var showCatagory = document.getElementById("scatagory");
 var getHint = document.getElementById("hint");
 var showClue = document.getElementById("clue");
-w
 
 
 // create alphabet ul
@@ -241,6 +240,7 @@ play();
   var catagoryIndex = categories.indexOf(chosenCategory);
   var hintIndex = chosenCategory.indexOf(word);
   showClue.innerHTML = "Clue: - " +  hints [catagoryIndex][hintIndex];
+  console.log(hintIndex);
 };
 
 document.getElementById('reset').onclick = function() {

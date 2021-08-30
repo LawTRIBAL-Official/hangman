@@ -8,12 +8,12 @@ var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 
 var categories;         
 var chosenCategory;    
-var getHint ;           
-var word ;              
-var guess ;             
+var getHint;           
+var word;              
+var guess;             
 var geusses = [ ];      
-var lives ;             
-var counter ;           
+var lives;             
+var counter;           
 var space;              
 
 var showLives = document.getElementById("mylives");
